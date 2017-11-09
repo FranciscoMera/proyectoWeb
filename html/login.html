@@ -21,7 +21,9 @@
     <script type="text/javascript" src="../js/carr.js"></script>
 </head>
 
-<body>
+<body background="../img/escom_foto.jpg" style="background-repeat: no-repeat;background-position: center;background-attachment: fixed;">
+
+
 <!--Barra de navegación de las páginas de inicio-->
 <nav>
     <div class="nav-wrapper ">
@@ -38,6 +40,40 @@
 
 <!--Contenidos-->
 
+    <div class="row">
+        <div class="col s8" style="margin-left: 15%;margin-top:5%;margin-bottom: 10%;">
+            <div class="card-panel">
+                <h1 class="indigo-text" style="font-weight: bolder;">Iniciar Sesión</h1>
+                <form action="../php/login.php" method="post">
+                    <div class="row">
+                        <div class="input-field col s12 indigo-text">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" name="username" id="username" class="validate">
+                            <label for="username">Nombre de Usuario</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 indigo-text" >
+                            <i class="material-icons prefix">lock</i>
+                            <input type="password" name="pwd" id="pwd" class="validate">
+                            <label for="pwd" >Contrase&ntilde;a</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row indigo-text">
+                            <a class="waves-effect waves-light" style="margin-left: 70%;"><i class="material-icons">help</i>Recordar Contraseña</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <input type="submit" class="btn indigo darken-4" style="margin-left: 70%;" value="Iniciar Sesión">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 
 
 <!--Píe de Página-->
